@@ -28,7 +28,7 @@
     </div>
     <hr class="text-white">
     <nav :class="['navbar', 'navbar-expand-lg', 'navbar-light', 'd-flex', 'justify-content-center', { 'sticky': isSticky }]" ref="navbar">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler bg-white " type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse  navbar-collapse d-md-flex justify-content-center" id="navbarText">
@@ -52,8 +52,18 @@
       </div>
     </nav>
     <hr class="text-white">
-    <Info />
-  </div>
+    <div class="container d-flex mt-5 overflow-y-hidden">
+      <div ref="container" class=" d-flex flex-column gap-2  overflow-y-hidden">
+          <h1 class="text-white overflow-y-hidden "> <span class="special">Welcome to School of Disciples </span></h1>
+          <h5 class="overflow-y-hidden text-white text-center text-md-start  ">Our mission is to nurture and develop future leaders</h5>
+              <h5  class="overflow-y-hidden text-white text-center text-md-start "> who are grounded in biblical truth, filled with the Holy Spirit,</h5>
+              <h5 class="overflow-y-hidden text-white text-center text-md-start">and committed to serving their communities with excellence and compassion.</h5>                  
+              <div class="d-flex justify-content-center justify-content-md-start gap-2 mt-4">
+              <button class="btn active w-25  text-white">Login</button>
+              <button class="btn active w-25  text-white">Register</button>
+              </div>
+          </div>
+      </div>  </div>
 </template>
 
 <script setup>
