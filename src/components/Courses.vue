@@ -18,14 +18,14 @@ onMounted(() => {
 </script>
 <template>
     <div>
-        <div style=" background: rgb(30, 18, 70); height: 200px;" class=" d-flex align-items-center flex-column mt-5 ">
+        <div style=" background: rgb(30, 18, 70); height: 200px;" class=" d-flex align-items-center flex-column mt-5 " id="course">
             <div class="container">
                 <h2 class="text-white my-5 d-flex gap-2"><span class="special">COURSES</span> WE OFFER</h2>
             </div>
         </div>
         <div style="margin-top: -80px;" class="container ">
-            <div class="card custom-card">
-                <div class="card-body">
+            <div class="card custom-card  z-0">
+                <div class="card-body position-relative d-inline-block">
                   <h5 class="card-title">This are the courses we Offer</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>  

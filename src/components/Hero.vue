@@ -12,11 +12,22 @@
   width: 100%;
   background-color:rgb(30, 18, 70) ;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index:auto;
-
+  z-index:2000;
 }
 .navbar {
   width: 100%;
+}
+.hero{
+  position: relative;
+  z-index: 99;
+}
+
+.nav-item.active .nav-link {
+  color: #000; /* Change to desired active link color */
+  background-color: #fff; /* Optional: change background color for active link */
+}
+.nav-link{
+  color: white;
 }
 </style>
 
@@ -29,24 +40,24 @@
     <hr class="text-white">
     <nav :class="['navbar', 'navbar-expand-lg', 'navbar-light', 'd-flex', 'justify-content-center', { 'sticky': isSticky }]" ref="navbar">
       <button class="navbar-toggler bg-white " type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon position-relative"></span>
       </button>
-      <div class="collapse  navbar-collapse d-md-flex justify-content-center" id="navbarText">
-        <ul class="nav-pills nav">
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="#">ABOUT</a>
+      <div class="collapse  navbar-collapse position-relative d-md-flex justify-content-center" id="navbarText">
+        <ul class="nav-pills nav position-relative">
+          <li class="nav-item "  :class="{ active: activeItem === 'about' }">
+            <a class="nav-link " href="#about" @click="setActive('about')">ABOUT</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="#">COURSE</a>
+          <li class="nav-item"  :class="{ active: activeItem === 'courses' }">
+            <a class="nav-link " href="#course" @click="setActive('courses')" >COURSE</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="#">TEAM</a>
+          <li class="nav-item"  :class="{ active: activeItem === 'team' }">
+            <a class="nav-link " href="#team" @click="setActive('team')">TEAM</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="#">LOGIN</a>
+          <li class="nav-item"  :class="{ active: activeItem === 'login' }">
+            <a class="nav-link" href="#" @click="setActive('login')">LOGIN</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="#">REGISTER</a>
+          <li class="nav-item"  :class="{ active: activeItem === 'register' }">
+            <a class="nav-link " href="#" @click="setActive('register')">REGISTER</a>
           </li>
         </ul>
       </div>
@@ -63,19 +74,23 @@
               <button class="btn active w-25  text-white">Register</button>
               </div>
           </div>
-      </div>  </div>
+      </div> 
+     </div>
 </template>
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import gsap from 'gsap';
-import Info from './info.vue';
 
+const activeItem = ref(''); // Default active item
 const container = ref(null);
 const isSticky = ref(false);
 
 const handleScroll = () => {
   isSticky.value = window.scrollY > 50;
+};
+const setActive = (item) => {
+  activeItem.value = item;
 };
 
 onMounted(() => {
