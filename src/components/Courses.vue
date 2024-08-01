@@ -20,7 +20,7 @@ onMounted(() => {
     <div>
         <div style=" background: rgb(30, 18, 70); height: 200px;" class=" d-flex align-items-center flex-column mt-5 ">
             <div class="container">
-                <h2 class="text-white my-5"><span class="special">COURSES</span> WE OFFER</h2>
+                <h2 class="text-white my-5 d-flex gap-2"><span class="special">COURSES</span> WE OFFER</h2>
             </div>
         </div>
         <div style="margin-top: -80px;" class="container ">
@@ -39,6 +39,7 @@ onMounted(() => {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 0.25rem;
     background: rgb(30, 0, 128);
+    z-index: 1;
   }
   
 

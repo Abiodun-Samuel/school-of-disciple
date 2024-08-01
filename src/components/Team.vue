@@ -20,7 +20,7 @@ onMounted(() => {
 <!--     <div class="mt-5 container align-items-center d-flex flex-column justify-content-center">
  -->        <div style=" background: rgb(30, 18, 70); height: 200px;" class=" d-flex align-items-center justify-content-center flex-column mt-5 ">
             <div class="container ">
-                <h2 class="text-white"><span class="special">MEET</span> THE TEAM</h2>
+                <h2 class="text-white d-flex gap-2"><span class="special">MEET</span> THE TEAM</h2>
             </div>
         </div>
        <div class="container  mt-5 text-center">
