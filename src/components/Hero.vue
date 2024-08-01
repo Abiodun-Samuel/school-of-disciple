@@ -81,7 +81,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import gsap from 'gsap';
-
 const activeItem = ref(''); // Default active item
 const container = ref(null);
 const isSticky = ref(false);

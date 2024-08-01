@@ -6,11 +6,11 @@ import Courses from '../components/Courses.vue';
 import Team from '../components/Team.vue';
 </script>
 <template>
-    <div></div>
-    <Hero class="z-3"/>
-    <About class="z-2"/>
-    <Courses class="z-1"/>
-    <Team class="z-0"/>
+    
+    <Hero/>
+    <About />
+    <Courses/>
+    <Team/>
 </template>
 <style >
 

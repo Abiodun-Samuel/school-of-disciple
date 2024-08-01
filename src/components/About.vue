@@ -1,6 +1,8 @@
 <script setup>
 import { ref,onMounted} from 'vue';
 import gsap from 'gsap';
+import AOS from "aos";
+
 
 const container = ref(null)
 
@@ -16,9 +18,14 @@ onMounted(() => {
         
     })
 });
+
+onMounted(() => {
+    AOS.init();
+})
 </script>
 <template>
-    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="container justify-content-center d-flex flex-column align-items-center mt-5 overflow-y-hidden" id="about">
+    <div data-aos="zoom-in"   data-aos-offset="300"
+    data-aos-easing="ease-in-sine" class="container justify-content-center d-flex flex-column align-items-center mt-5 overflow-y-hidden" id="about">
        <h4 class="text-black-50">ABOUT US</h4>
        <h6 ref="container" style="line-height: 30px;" class="mx-lg-5 d-flex text-center mt-2">The School of Disciples was founded in 1985 by Pastor E.A. Adeboye, the General Overseer of RCCG Worldwide. It is coordinated by Christ the Redeemer’s Ministries, an evangelical arm of the Redeemed Christian Church of God. At this school, Christians of all denominations can learn to be true and genuine disciples of Jesus Christ and how to study to show themselves approved unto God.
 

@@ -1,6 +1,8 @@
 <script setup>
 import { ref,onMounted} from 'vue';
 import gsap from 'gsap';
+import AOS from "aos";
+
 
 const container = ref(null)
 
@@ -15,6 +17,9 @@ onMounted(() => {
         
     })
 });
+onMounted(() => {
+    AOS.init();
+})
 </script>
 <template>
 <!--     <div class="mt-5 container align-items-center d-flex flex-column justify-content-center">
@@ -240,7 +245,7 @@ onMounted(() => {
 }
 .team .team_box .profil:hover{
     border-radius: 20px;
-    height: 540px;
+    height: 600px;
 }
 
 .team .team_box .profile img{
