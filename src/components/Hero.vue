@@ -36,7 +36,7 @@
         <h4 class="text-white text-center">Our mission is to nurture and develop future leaders</h4>
         <h4 class="text-white text-center">who are grounded in biblical truth, filled with the Holy Spirit,</h4>
         <h4 class="text-white text-center">and committed to serving their communities with excellence and compassion.</h4>
-        <a class="icon mt-5">
+        <a class="icon mt-5" @click="scrollToBottom">
           <i class="bi bi-arrow-down-circle-fill mt-5 text-white fs-1" style="cursor: pointer;"></i>
         </a>
       </div>
@@ -46,6 +46,16 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import AOS from "aos";
+import gsap from 'gsap';
+
+
+const container = ref(null);
+const scrollToBottom = () => {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: 'smooth'
+  });
+};
 
 const activeItem = ref('');
 const isSticky = ref(false);
@@ -74,6 +84,22 @@ const setActive = (item) => {
 };
 
 onMounted(() => {
+  gsap.from(container.value, {
+    opacity: 0,
+    duration: 1,
+    y: "+100",
+    autoAlpha: 0,
+    stagger: 0.25,
+    ease: "back.inOut(2.7)",
+  });
+
+  gsap.to(".icon", {
+    y: "-10px",
+    repeat: -1,
+    yoyo: true,
+    ease: "power1.inOut",
+    duration: 0.8
+  });
   AOS.init();
   window.addEventListener('scroll', handleScroll);
 });
