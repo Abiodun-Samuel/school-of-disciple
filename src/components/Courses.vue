@@ -18,12 +18,12 @@ onMounted(() => {
 </script>
 <template>
     <div>
-        <div style=" background: rgb(30, 18, 70); height: 200px;" class=" d-flex align-items-center flex-column mt-5 " id="course">
-            <div class="container">
-                <h2 class="text-white my-5 d-flex gap-2"><span class="special">COURSES</span> WE OFFER</h2>
+        <div class=" d-flex flex-column mt-5 " id="course">
+            <div class="container text-center">
+                <h2 class="text-dark "><span class="">COURSES</span> WE OFFER</h2>
             </div>
         </div>
-        <div style="margin-top: -80px;" class="container ">
+        <div  class="container ">
             <div class="card custom-card  z-0">
                 <div class="card-body position-relative d-inline-block">
                   <h5 class="card-title">This are the courses we Offer</h5>

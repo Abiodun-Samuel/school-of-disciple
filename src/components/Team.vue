@@ -1,36 +1,47 @@
 <script setup>
-import { ref,onMounted} from 'vue';
+import { ref, onMounted } from 'vue';
 import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import AOS from "aos";
 
+gsap.registerPlugin(ScrollTrigger);
 
-const container = ref(null)
+const container = ref(null);
+const rollingObject = ref(null);
 
 onMounted(() => {
-    gsap.from(container.value.children,{
-        display:0.5,
-        duration:1,
-        x:"-100",
-        autoAlpha:0,
-        stagger:0.25,
-        ease:"back.inOut(2.7)",
-        
-    })
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: rollingObject.value,
+      start: 'top 80%', // Animation starts when the top of rollingObject is 80% from the top of the viewport
+      end: 'bottom 20%', // Animation ends when the bottom of rollingObject is 20% from the top of the viewport
+      toggleActions: 'play none none reverse' // Play animation when scrolled into view, and reverse when scrolled out
+    }
+  });
+
+  tl.fromTo(rollingObject.value, {
+    x: -100,
+    rotation: -360,
+  }, {
+    x: 0,
+    rotation: 0,
+    duration: 1,
+    ease: 'power2.out',
+  });
+
+  AOS.init();
 });
-onMounted(() => {
-    AOS.init();
-})
 </script>
 <template>
 <!--     <div class="mt-5 container align-items-center d-flex flex-column justify-content-center">
- -->        <div style=" background: rgb(30, 18, 70); height: 200px;" class="no-select d-flex align-items-center justify-content-center flex-column mt-5 " id="team">
-            <div class="container ">
-                <h2 class="text-white d-flex gap-2"><span class="special">MEET</span> THE TEAM</h2>
+ -->        <div style=" background: rgb(32,201,151); height: 200px;" class="no-select  d-flex align-items-center justify-content-center flex-column mt-5 " id="team">
+            <div class="container  justify-content-center d-flex ">
+                <h1 class="text-white">MEET THE TEAM</h1>
             </div>
         </div>
        <div class="container  mt-5 text-center">
         <div class="d-lg-flex team ">
-          <div class="col team_box mb-5">
+          <div ref="rollingObject" class="col team_box mb-5">
              <div class="profil">
                 <img src="../assets/images/Pastor5.jpg">
 
