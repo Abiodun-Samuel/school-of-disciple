@@ -36,7 +36,7 @@
         <h4 class="text-white text-center">Our mission is to nurture and develop future leaders</h4>
         <h4 class="text-white text-center">who are grounded in biblical truth, filled with the Holy Spirit,</h4>
         <h4 class="text-white text-center">and committed to serving their communities with excellence and compassion.</h4>
-        <a class="icon mt-5" @click="scrollToBottom">
+        <a ref="btn" class="icon mt-5"  @click="scrollToBottom">
           <i class="bi bi-arrow-down-circle-fill mt-5 text-white fs-1" style="cursor: pointer;"></i>
         </a>
       </div>
@@ -49,7 +49,7 @@ import AOS from "aos";
 import gsap from 'gsap';
 
 
-const container = ref(null);
+const btn = ref(null);
 const scrollToBottom = () => {
   window.scrollTo({
     top: document.body.scrollHeight,
@@ -82,12 +82,11 @@ const setActive = (item) => {
   activeItem.value = item;
   showNavbar.value = false; // Close navbar after clicking a link
 };
-
 onMounted(() => {
-  gsap.from(container.value, {
+  gsap.from(btn.value, {
     opacity: 0,
     duration: 1,
-    y: "+100",
+    y: "+10",
     autoAlpha: 0,
     stagger: 0.25,
     ease: "back.inOut(2.7)",
@@ -100,6 +99,9 @@ onMounted(() => {
     ease: "power1.inOut",
     duration: 0.8
   });
+});
+
+onMounted(() => {
   AOS.init();
   window.addEventListener('scroll', handleScroll);
 });
