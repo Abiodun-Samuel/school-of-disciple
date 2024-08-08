@@ -1,6 +1,6 @@
 <template>
   <div ref="container" class="hero">
-    <nav style="  background-color: rgb(30, 18, 70);" :class="['navbar', 'navbar-expand-md', 'navbar-light', 'd-flex', 'justify-content-center', { 'sticky': isSticky }]" ref="navbar">
+    <nav style="  background-color: ;" :class="['navbar', 'navbar-expand-md', 'navbar-light', 'd-flex', 'justify-content-center', { 'sticky': isSticky }]" ref="navbar">
       <div class="container-fluid d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
           <img src="../assets/images/logo.png" alt="Logo" width="120px">
@@ -90,7 +90,7 @@ onUnmounted(() => {
     transform: translateX(-50%);
     width: 100%;
     max-width: 1540px;
-    background-color: rgb(30, 18, 70);
+    background-color:#343a40;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 2000;
     transition: top 0.3s;
