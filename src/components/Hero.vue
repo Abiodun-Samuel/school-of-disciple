@@ -1,6 +1,6 @@
 <template>
   <div ref="container" class="hero">
-    <nav style="  background-color: ;" :class="['navbar', 'navbar-expand-md', 'navbar-light', 'd-flex', 'justify-content-center', { 'sticky': isSticky }]" ref="navbar">
+    <nav  :class="['navbar', 'navbar-expand-md', 'navbar-light', 'd-flex', 'justify-content-center', { 'sticky': isSticky }]" ref="navbar">
       <div class="container-fluid d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
           <img src="../assets/images/logo.png" alt="Logo" width="120px">
@@ -32,7 +32,7 @@
     </nav>
     <div data-aos="fade-up" data-aos-duration="1000" class="container d-flex justify-content-center mt-5 overflow-hidden">
       <div ref="container" class="d-flex mt-5 flex-column gap-2 justify-content-center text-center overflow-hidden">
-        <h1 class="special">Welcome to School of Disciples</h1>
+        <h1 class="special overflow-hidden">Welcome to School of Disciples</h1>
         <h4 class="text-white text-center">Our mission is to nurture and develop future leaders</h4>
         <h4 class="text-white text-center">who are grounded in biblical truth, filled with the Holy Spirit,</h4>
         <h4 class="text-white text-center">and committed to serving their communities with excellence and compassion.</h4>

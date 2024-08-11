@@ -10,25 +10,11 @@ const container = ref(null);
 const rollingObject = ref(null);
 
 onMounted(() => {
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: rollingObject.value,
-      start: 'top 80%', // Animation starts when the top of rollingObject is 80% from the top of the viewport
-      end: 'bottom 20%', // Animation ends when the bottom of rollingObject is 20% from the top of the viewport
-      toggleActions: 'play none none reverse' // Play animation when scrolled into view, and reverse when scrolled out
-    }
-  });
-
-  tl.fromTo(rollingObject.value, {
-    x: -100,
-    rotation: -360,
-  }, {
-    x: 0,
-    rotation: 0,
-    duration: 1,
-    ease: 'power2.out',
-  });
-
+    gsap.fromTo(
+      container.value,
+      { rotate: 0 },
+      { rotate: 360, duration: 2, ease: "power1.inOut", repeat: -1 }
+    );
   AOS.init();
 });
 </script>
@@ -41,7 +27,7 @@ onMounted(() => {
         </div>
        <div class="container  mt-5 text-center">
         <div class="d-lg-flex team ">
-          <div ref="rollingObject" class="col team_box mb-5">
+          <div  data-aos="fade-right" ref="rollingObject" class="container col team_box mb-5">
              <div class="profil">
                 <img src="../assets/images/Pastor5.jpg">
 
@@ -52,7 +38,7 @@ onMounted(() => {
 
             </div>
           </div>
-            <div class="col team_box mb-5">
+            <div data-aos="fade-down" class="col team_box mb-5">
                 <div class="profil">
                    <img src="../assets/images/Pastor2.jpg">
    
@@ -63,7 +49,7 @@ onMounted(() => {
    
                </div>
              </div>
-             <div class="col team_box mb-5">
+             <div data-aos="fade-left" class="col team_box mb-5">
                 <div class="profil">
                    <img src="../assets/images/p1.jpg">
    
@@ -75,7 +61,7 @@ onMounted(() => {
                </div>
              </div>
         </div>
-        <div class="d-lg-flex team gap-5">
+        <div data-aos="fade-right" class="d-lg-flex team gap-5">
             <div class="col team_box mb-5">
                <div class="profil">
                   <img src="../assets/images/p2.jpeg">
@@ -89,7 +75,7 @@ onMounted(() => {
   
               </div>
             </div>
-              <div class="col team_box mb-5">
+              <div data-aos="fade-down" class="col team_box mb-5">
                   <div class="profil">
                      <img src="../assets/images/p3.jpg">
      
@@ -103,7 +89,7 @@ onMounted(() => {
      
                  </div>
                </div>
-               <div class="col team_box mb-5">
+               <div data-aos="fade-left" class="col team_box mb-5">
                   <div class="profil">
                      <img src="../assets/images/p4.jpg" style="background-position:top;">
      
@@ -115,7 +101,7 @@ onMounted(() => {
                  </div>
                </div>
           </div>
-          <div class="d-lg-flex team gap-5">
+          <div data-aos="fade-right" class="d-lg-flex team gap-5">
             <div class="col team_box mb-5">
                <div class="profil">
                   <img src="../assets/images/p5.jpg">
@@ -127,7 +113,7 @@ onMounted(() => {
   
               </div>
             </div>
-              <div class="col team_box mb-5">
+              <div data-aos="fade-up" class="col team_box mb-5">
                   <div class="profil">
                      <img src="../assets/images/p6.jpg">
      
@@ -140,7 +126,7 @@ onMounted(() => {
      
                  </div>
                </div>
-               <div class="col team_box mb-5">
+               <div data-aos="fade-right"  class="col team_box mb-5">
                   <div class="profil">
                      <img src="../assets/images/p7.jpg">
      
@@ -152,7 +138,7 @@ onMounted(() => {
                  </div>
                </div>
           </div>
-          <div class="d-lg-flex team gap-5">
+          <div data-aos="fade-right" class="d-lg-flex team gap-5">
             <div class="col team_box mb-5">
                <div class="profile">
                   <img src="../assets/images/p8.jpg">
@@ -165,7 +151,8 @@ onMounted(() => {
   
               </div>
             </div>
-              <div class="col team_box mb-5">
+              <div data-aos="fade-up"
+               class="col team_box mb-5">
                   <div class="profile">
                      <img src="../assets/images/p9.jpeg">
                      <div class="info">

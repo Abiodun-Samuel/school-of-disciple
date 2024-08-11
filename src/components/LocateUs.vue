@@ -17,10 +17,10 @@ onMounted(() => {
 });
 </script>
 <template>
-        <div  class="ltl d-flex  flex-column mt-5 " id="course">
-            <div class="container d-flex justify-content-around align-items-center align-content-center" >
+        <div  class="ltl d-flex  flex-column mt-5 overflow-hidden " id="course">
+            <div data-aos="zoom-in-up" class="container d-flex justify-content-around align-items-center align-content-center" >
                 <h2 >Join Our School of Ministry, Create an account</h2>
-                <button style="border-radius: 5px;">Register</button>
+                <button style="border-radius: 5px;" >Register</button>
             </div>
         </div>
 </template>
