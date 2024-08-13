@@ -25,7 +25,7 @@ onMounted(() => {
                 <h1 class="">MEET THE TEAM</h1>
             </div>
         </div>
-       <div class="container  text-center">
+       <div class="container d-flex flex-column text-center gap-3">
         <div class="d-lg-flex team gap-3 justify-content-center align-content-center ">
             <div class="card byn">
                 <img class="card-img-top" src="../assets/images/Pastor5.jpg" alt="Card image cap"  height="250px" >
@@ -61,7 +61,7 @@ onMounted(() => {
              </div>
            </div>
         </div>
-        <div data-aos="fade-right" class=" d-lg-flex team gap-3 mt-5">
+        <div data-aos="fade-right" class=" d-lg-flex team gap-3 ">
             <div class="card byn">
                 <img class="card-img-top" src="../assets/images/p2.jpeg" alt="Card image cap"  height="250px" >
                 <div class="card-body">
@@ -103,7 +103,7 @@ onMounted(() => {
 
               </div>
           </div>
-          <div data-aos="fade-right" class="d-lg-flex team gap-3 mt-5">
+          <div data-aos="fade-right" class="d-lg-flex team gap-3 ">
               <div  class="card byn">
                 <img class="card-img-top" src="../assets/images/p6.jpg" alt="Card image cap"  height="250px">
                      <div class="card-body">
@@ -169,9 +169,11 @@ img{
 @media (max-width:720px){
 .byn{
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-
+img{
+    object-position: 20%;
+}
 }
 
 </style>
