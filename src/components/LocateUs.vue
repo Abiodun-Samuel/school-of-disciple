@@ -8,7 +8,7 @@ onMounted(() => {
     gsap.from(container.value.children,{
         display:0.5,
         duration:1,
-        x:"-100",
+        x:"-10",
         autoAlpha:0,
         stagger:0.25,
         ease:"back.inOut(2.7)",
@@ -26,7 +26,7 @@ onMounted(() => {
 </template>
 <style>
 .ltl{
-    background: linear-gradient(135deg, rgba(32, 201, 151, 1) 0%, rgba(32, 201, 151, 0.8) 100%), 
+    background: linear-gradient(rgba(47, 45, 45, 0.5),rgba(47, 45, 45, 0.2)), 
     url('https://preview.colorlib.com/theme/oakberry/images/bg_4.jpg.webp');
     background-size: cover; 
     background-position: center; 
@@ -45,7 +45,7 @@ onMounted(() => {
     z-index: 1;
 }
 button{
-    background: black;
+    background: green;
     color: white;
     border: none;
     width: 120px;
