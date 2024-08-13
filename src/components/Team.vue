@@ -149,6 +149,7 @@ onMounted(() => {
     width: 18rem;
 }
 img{
+    display: inline-block;
     object-fit: cover;
 }
 .home{
@@ -170,9 +171,7 @@ img{
     width: 100%;
     margin-bottom: 10px;
 }
-img{
-    object-fit: cover;
-}
+
 }
 
 </style>
