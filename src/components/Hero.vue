@@ -1,163 +1,104 @@
 <template>
-  <div ref="container" class="hero">
-    <nav  :class="['navbar', 'navbar-expand-md', 'navbar-light', 'd-flex', 'justify-content-center', { 'sticky': isSticky }]" ref="navbar">
-      <div class="container-fluid d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center">
-          <img src="../assets/images/logo.png" alt="Logo" width="120px">
-          <img src="../assets/images/rcg.png" alt="RCG" width="60px" class="ms-2">
-        </div>
-        <button class="navbar-toggler" type="button" @click="toggleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div  :class="['collapse','mx-lg-5', 'navbar-collapse', { 'show': showNavbar }]" id="navbarText">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item" :class="{ active: activeItem === 'about' }">
-              <a class="nav-link" href="#about" @click="setActive('about')">ABOUT</a>
-            </li>
-            <li class="nav-item" :class="{ active: activeItem === 'courses' }">
-              <a class="nav-link" href="#course" @click="setActive('courses')">COURSE</a>
-            </li>
-            <li class="nav-item" :class="{ active: activeItem === 'team' }">
-              <a class="nav-link" href="#team" @click="setActive('team')">TEAM</a>
-            </li>
-            <li class="nav-item" :class="{ active: activeItem === 'login' }">
-              <a class="nav-link" href="#" @click="setActive('login')">LOGIN</a>
-            </li>
-            <li class="nav-item" :class="{ active: activeItem === 'register' }">
-              <a class="nav-link" href="#" @click="setActive('register')">REGISTER</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div data-aos="fade-up" data-aos-duration="1000" class="container d-flex justify-content-center mt-5 overflow-hidden">
-      <div ref="container" class="d-flex mt-5 flex-column gap-2 justify-content-center text-center overflow-hidden">
-        <h1 class="special overflow-hidden">Welcome to School of Disciples</h1>
-        <h4 class="text-white text-center">Our mission is to nurture and develop future leaders</h4>
-        <h4 class="text-white text-center">who are grounded in biblical truth, filled with the Holy Spirit,</h4>
-        <h4 class="text-white text-center">and committed to serving their communities with excellence and compassion.</h4>
-        <a ref="btn" class="icon mt-5"  @click="scrollToBottom">
-          <i class="bi bi-arrow-down-circle-fill mt-5 text-white fs-1" style="cursor: pointer;"></i>
+  <div ref="container" class="header overflow-hidden">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      class="container d-flex justify-content-center mt-md-5 overflow-hidden"
+    >
+      <div
+        ref="container"
+        class="d-flex mt-5 flex-column gap-2 justify-content-center text-center overflow-hidden opacity-100"
+      >
+        <h1 class="special text-white overflow-hidden mt-5">Welcome to School of Disciples</h1>
+        <h5 class="text-white">Our mission is to nurture and develop future leaders</h5>
+        <h5 class="text-white text-center">
+          who are grounded in biblical truth, filled with the Holy Spirit,
+        </h5>
+        <h5 class="text-white text-center">
+          and committed to serving their communities with excellence and compassion.
+        </h5>
+        <a ref="btn" class="icon mt-5" @click="scrollToBottom">
+          <i class="bi bi-arrow-down-circle-fill mt-5 text-white fs-1" style="cursor: pointer"></i>
         </a>
       </div>
-    </div> 
+    </div>
   </div>
+  <div class="decore"></div>
 </template>
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
-import AOS from "aos";
-import gsap from 'gsap';
+/* 
 
-
-const btn = ref(null);
+const btn = ref(null)
 const scrollToBottom = () => {
   window.scrollTo({
     top: document.body.scrollHeight,
     behavior: 'smooth'
-  });
-};
+  })
+}
 
-const activeItem = ref('');
-const isSticky = ref(false);
-const showNavbar = ref(false);
-
-const handleScroll = () => {
-  isSticky.value = window.scrollY > 500;
-
-  const sections = document.querySelectorAll("section");
-  sections.forEach((section) => {
-    const top = section.offsetTop - 100;
-    const bottom = top + section.offsetHeight;
-    if (window.scrollY >= top && window.scrollY <= bottom) {
-      activeItem.value = section.id;
-    }
-  });
-};
-
-const toggleNavbar = () => {
-  showNavbar.value = !showNavbar.value;
-};
-
-const setActive = (item) => {
-  activeItem.value = item;
-  showNavbar.value = false; // Close navbar after clicking a link
-};
 onMounted(() => {
   gsap.from(btn.value, {
     opacity: 0,
     duration: 1,
-    y: "+10",
+    y: '+10',
     autoAlpha: 0,
     stagger: 0.25,
-    ease: "back.inOut(2.7)",
-  });
+    ease: 'back.inOut(2.7)'
+  })
 
-  gsap.to(".icon", {
-    y: "-10px",
+  gsap.to('.icon', {
+    y: '-10px',
     repeat: -1,
     yoyo: true,
-    ease: "power1.inOut",
+    ease: 'power1.inOut',
     duration: 0.8
+  })
+})
+ */
+/*   onMounted(() => {
+    AOS.init();
+    window.addEventListener("scroll", handleScroll);
   });
-});
-
-onMounted(() => {
-  AOS.init();
-  window.addEventListener('scroll', handleScroll);
-});
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll);
-});
+  
+  onUnmounted(() => {
+    window.removeEventListener("scroll", handleScroll);
+  }); */
 </script>
 <style scoped>
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 1540px;
-    background-color:#343a40;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 2000;
-    transition: top 0.3s;
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../assets/images/hero.jpg);
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  opacity: 0.9;
+  transition: 0.7s;
+  background-size: cover;
 }
-
-.navbar-toggler {
-  display: none;
-}
-
-@media (max-width: 991.98px) {
-  .navbar-toggler {
-    display: block;
-  }
-  .navbar-collapse {
-    background-color: rgb(30, 18, 70);
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    z-index: 1999;
-  }
-}
-
-.navbar-nav {
-  text-align: center;
-}
-
-.nav-item .nav-link:hover{
-  color: #000;
-  background-color: #fff;
-  border-radius: 5px;
-}
-
-.nav-link {
+.special {
   color: white;
+  display: flex;
+  text-align: center;
+  font-weight: 900;
+  font-size: 60px;
 }
-
-.hero {
+.decore {
   position: relative;
+  background-image: url(../assets/images/decor.png);
+  height: 50px;
+  width: 100%;
   z-index: 99;
+  margin-top: -40px;
+  opacity: 1;
+  background-repeat: no-repeat;
+}
+@media (max-width: 576px) {
+  .special {
+    font-size: 35px;
+  }
+  .header {
+    height: 500px;
+  }
 }
 </style>

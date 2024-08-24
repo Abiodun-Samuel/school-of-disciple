@@ -1,0 +1,132 @@
+<template>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid mx-md-5 my-2">
+      <div>
+        <img src="../assets/images/logo.png" alt="Logo" width="120px" />
+        <img src="../assets/images/rcg.png" alt="RCG" width="60px" class="newimg" />
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+        <div class="" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <router-link to="/" style="text-decoration: none">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/about" style="text-decoration: none">
+                <a class="nav-link" aria-current="page" href="#">About</a>
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/team" style="text-decoration: none">
+                <a class="nav-link" aria-current="page" href="#">Team</a>
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/login" style="text-decoration: none">
+                <a class="nav-link" href="#">Login</a>
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="sponsor" style="text-decoration: none">
+                <a class="nav-link nav-tr" href="#">Sponsor a Student</a>
+              </router-link>
+            </li>
+            <li class="nav-item nav-nw">
+              <router-link to="/register" style="text-decoration: none">
+                <a class="nav-link" href="#">Register</a>
+              </router-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</template>
+<script></script>
+<style scoped>
+nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+.nav-tr {
+  background-color: #65ff57;
+  color: black;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.nav-link {
+  color: white;
+}
+.txt {
+  color: white;
+}
+.nav-nw {
+  background-color: #ffc107;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-left: 13px;
+  width: 150px;
+  color: black;
+}
+.newimg {
+  margin-right: -200px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1540px;
+  background-color: #343a40;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2000;
+  transition: top 0.3s;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    display: block;
+  }
+  .navbar-collapse {
+    background-color: rgb(30, 18, 70);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    z-index: 1999;
+  }
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.nav-item .nav-link:hover {
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.nav-link {
+  color: white;
+}
+</style>
