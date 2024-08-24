@@ -27,7 +27,6 @@
         end time army of Jesus Christ. May you remain heavenly conscious and focus as you go through
         the journey of life
       </p>
-      <router-link to="/about">new</router-link>
     </div>
     <div></div>
   </div>
