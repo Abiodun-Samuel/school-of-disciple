@@ -1,4 +1,5 @@
-<te<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<<template>    
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
