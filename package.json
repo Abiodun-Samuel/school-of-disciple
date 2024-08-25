@@ -15,7 +15,12 @@
     "bootstrap": "^5.3.3",
     "bootstrap-vue": "^2.23.1",
     "gsap": "^3.12.5",
+    "jquery": "^3.7.1",
+    "owl.carousel": "^2.3.4",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.10",
     "vue": "^3.4.38",
+    "vue-owl-carousel": "^2.0.3",
     "vue-router": "^4.3.3"
   },
   "devDependencies": {

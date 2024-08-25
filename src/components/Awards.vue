@@ -19,7 +19,7 @@ onMounted(() => {
   <div class="ltl d-flex flex-column mt-5 overflow-hidden" id="course">
     <div
       data-aos="zoom-in-up"
-      class="container d-flex justify-content-around align-items-center align-content-center"
+      class="container d-flex justify-content-around  align-items-center align-content-center"
     >
       <!--  <h2 >Join Our School of Ministry, Create an account</h2>
                 <button style="border-radius: 5px;" >Register</button> -->
@@ -62,6 +62,9 @@ onMounted(() => {
   color: #ffc107;
 }
 .txte {
+  display: flex;
+  text-align: center;
+
   color: rgb(198, 189, 189);
 }
 .custom-card {

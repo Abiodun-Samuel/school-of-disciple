@@ -8,6 +8,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import bootstrap from 'bootstrap/dist/js/bootstrap.bundle'
 import 'aos/dist/aos.css'
+import 'swiper/swiper-bundle.css';
+
+
 
 const app = createApp(App)
 

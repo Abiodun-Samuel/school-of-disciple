@@ -1,23 +1,77 @@
-<template>    
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="../assets/images/book.jpg" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="../assets/images/chef1.png" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="../assets/images/chef2.png" alt="Third slide">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+<template>
+  <div>
+   <!--  <swiper ref="mySwiper" :slides-per-view="1" :loop="true" class="mySwiper">
+      <swiper-slide>
+        <img src="https://via.placeholder.com/800x400?text=Slide+1" alt="Slide 1" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="https://via.placeholder.com/800x400?text=Slide+2" alt="Slide 2" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="https://via.placeholder.com/800x400?text=Slide+3" alt="Slide 3" />
+      </swiper-slide>
+    </swiper>
+    <button @click="goPrev" class="nav-button">Previous</button>
+    <button @click="goNext" class="nav-button">Next</button> -->
   </div>
 </template>
+
+<script>
+/* import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/swiper-bundle.css';
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  data() {
+    return {
+      swiperInstance: null,
+    };
+  },
+  mounted() {
+    // Store the Swiper instance after the component has mounted
+    this.swiperInstance = this.$refs.mySwiper.swiper;
+  },
+  methods: {
+    goNext() {
+      if (this.swiperInstance) {
+        this.swiperInstance.slideNext();
+      }
+    },
+    goPrev() {
+      if (this.swiperInstance) {
+        this.swiperInstance.slidePrev();
+      }
+    },
+  },
+}; */
+</script>
+
+<style scoped>
+.mySwiper {
+  background-color: red;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.nav-button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+</style>
