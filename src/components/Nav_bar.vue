@@ -21,33 +21,29 @@
         <div class="" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <router-link to="/" style="text-decoration: none">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+              <router-link to="/" class="nav-link" style="text-decoration: none">
+                About
               </router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/about" style="text-decoration: none">
-                <a class="nav-link" aria-current="page" href="#">About</a>
+              <router-link to="/about" class="nav-link" style="text-decoration: none">
+                Team
+              </router-link>
+            </li>
+           
+            <li class="nav-item">
+              <router-link to="/login" class="nav-link" style="text-decoration: none">
+               Login
               </router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/team" style="text-decoration: none">
-                <a class="nav-link" aria-current="page" href="#">Team</a>
-              </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/login" style="text-decoration: none">
-                <a class="nav-link" href="#">Login</a>
-              </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="sponsor" style="text-decoration: none">
-                <a class="nav-link nav-tr" href="#">Sponsor a Student</a>
+              <router-link to="sponsor" class="nav-link nav-tr" style="text-decoration: none">
+                Sponsor a Student
               </router-link>
             </li>
             <li class="nav-item nav-nw">
-              <router-link to="/register" style="text-decoration: none">
-                <a class="nav-link" href="#">Register</a>
+              <router-link to="/register" class="nav-link" style="text-decoration: none">
+                Register
               </router-link>
             </li>
           </ul>

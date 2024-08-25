@@ -1,15 +1,28 @@
+<script setup>
+import Team from '@/components/Team.vue';
+
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="header">
+    <h1 class="special text-white overflow-hidden mt-5">Our Team</h1>
   </div>
+  <Team/>
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../assets/images/hero.jpg);
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  opacity: 0.9;
+  transition: 0.7s;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
