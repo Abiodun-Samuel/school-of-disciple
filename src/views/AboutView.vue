@@ -4,10 +4,12 @@ import Team from '@/components/Team.vue';
 </script>
 
 <template>
+  <div style="background-color:#f8f8f8">
   <div class="header">
     <h1 class="special text-white overflow-hidden mt-5">Our Team</h1>
   </div>
   <Team/>
+</div>
 </template>
 
 <style>

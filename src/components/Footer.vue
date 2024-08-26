@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <div class="footer mt-5">
+        <div class="footer ">
         <div class="row">
         <a href="#"><i class="fa fa-facebook"></i></a>
         <a href="#"><i class="fa fa-instagram"></i></a>
