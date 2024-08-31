@@ -17,6 +17,7 @@
     "gsap": "^3.12.5",
     "jquery": "^3.7.1",
     "owl.carousel": "^2.3.4",
+    "primevue": "^4.0.5",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.1.10",
     "vue": "^3.4.38",

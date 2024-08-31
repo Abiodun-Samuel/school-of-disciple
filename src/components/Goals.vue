@@ -1,6 +1,9 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
 import { onMounted } from 'vue'
 import AOS from 'aos'
+import SubTeamPage from './SubTeamPage.vue';
+import Slider2 from './slider2.vue';
 
 onMounted(() => {
   AOS.init()
@@ -44,7 +47,10 @@ onMounted(() => {
     </div>
     <div class="d-flex justify-content-center flex-column align-items-center mt-5">
       <h3>Our Management</h3>
-      <div></div>
+      <div class="">
+        <SubTeamPage class="d-md-flex d-none"/>
+        <Slider2 class="d-md-none d-flex"/>
+        </div>
     </div>
   </div>
 </template>

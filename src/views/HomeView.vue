@@ -4,8 +4,8 @@ import Goals from '@/components/Goals.vue'
 import Hero from '@/components/Hero.vue'
 import Mission from '@/components/Mission.vue'
 import SubAbout from '@/components/SubAbout.vue'
-import SubTeamPage from '@/components/SubTeamPage.vue'
-</script>
+/* import SubTeamPage from '@/components/SubTeamPage.vue'
+ */</script>
 
 <template>
   <main>
@@ -14,7 +14,7 @@ import SubTeamPage from '@/components/SubTeamPage.vue'
     <Awards />
     <Mission />
     <Goals />
-    <SubTeamPage/>
-  </main>
+<!--     <SubTeamPage/>
+ -->  </main>
 </template>
 <script></script>
