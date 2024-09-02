@@ -8,7 +8,7 @@
     >
       <div
         ref="container"
-        class="d-flex  h-100 mt-lg-5 flex-column gap-2 justify-content-center text-center overflow-hidden opacity-100"
+        class="d-flex  h-100 mt-lg-2 flex-column gap-2 justify-content-center text-center overflow-hidden opacity-100"
       >
       <div class="w-100 d-flex justify-content-center flex-column align-items-center">
         <h1 class="special text-white overflow-hidden mt-5">Welcome to School of Disciples</h1>
