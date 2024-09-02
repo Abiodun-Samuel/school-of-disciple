@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid mx-md-5 my-2">
       <div>
         <img src="../assets/images/logo.png" alt="Logo" width="120px" />
@@ -14,12 +14,12 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon "></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
         <div class="" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav gap-2 me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <router-link to="/" class="nav-link" style="text-decoration: none">
                 Home
@@ -74,9 +74,7 @@ nav {
   background-color: #ffc107;
   border-radius: 20px;
   font-weight: 700;
-  margin-left: 13px;
-  width: 150px;
-  color: black;
+  padding:0 10px;
 }
 .newimg {
   margin-right: -200px;
@@ -93,9 +91,15 @@ nav {
   z-index: 2000;
   transition: top 0.3s;
 }
+.navbar-toggler-icon{
+  color:white
+}
 
 .navbar-toggler {
   display: none;
+  border: none;
+  width: 50px;
+  height: 50px;
 }
 
 @media (max-width: 991.98px) {
@@ -103,8 +107,10 @@ nav {
     display: block;
   }
   .navbar-collapse {
-    background-color: rgb(30, 18, 70);
+    background-color: #343a40;
     position: absolute;
+    padding:0 20px ;
+    gap: 5px;
     top: 100px;
     left: 0;
     width: 100%;
@@ -118,8 +124,6 @@ nav {
 
 .nav-item .nav-link:hover {
   color: #000;
-  background-color: #fff;
-  border-radius: 5px;
 }
 
 .nav-link {

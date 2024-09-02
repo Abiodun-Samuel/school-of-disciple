@@ -22,7 +22,7 @@ onMounted(() => {
 </script>
 <template>
   <div
-    class="container justify-content-center d-flex flex-sm-colum-reverse align-items-center mt-5"
+    class="container justify-content-center d-flex flex-sm-colum-reverse align-items-center mt-md-5"
     id="about"
   >
     <div class="container row">

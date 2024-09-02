@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div ref="container" class="header overflow-hidden">
     <div
@@ -7,17 +8,19 @@
     >
       <div
         ref="container"
-        class="d-flex  h-100 mt-5 flex-column gap-2 justify-content-center text-center overflow-hidden opacity-100"
+        class="d-flex  h-100 mt-lg-5 flex-column gap-2 justify-content-center text-center overflow-hidden opacity-100"
       >
+      <div class="w-100 d-flex justify-content-center flex-column align-items-center">
         <h1 class="special text-white overflow-hidden mt-5">Welcome to School of Disciples</h1>
-        <h5 class="text-white">Our mission is to nurture and develop future leaders</h5>
+          <h5 class="text-white text-center w-75 lh-lg">
+            Our mission is to nurture and develop future leaders
+            who are grounded in biblical truth, filled with the Holy Spirit,
+            and committed to serving their communities with excellence and compassion,
+          </h5>
+        </div>
         <h5 class="text-white text-center">
-          who are grounded in biblical truth, filled with the Holy Spirit,
         </h5>
-        <h5 class="text-white text-center">
-          and committed to serving their communities with excellence and compassion.
-        </h5>
-        <a ref="btn" class="icon mt-5" @click="scrollToBottom">
+        <a ref="btn" class="icon mt-1" @click="scrollToBottom">
           <i class="fa fa-arrow-down" aria-hidden="true" style="cursor: pointer"></i>
         </a>
       </div>
@@ -27,7 +30,6 @@
 </template>
 <script setup>
 import { ref, onMounted,} from "vue";
-import AOS from "aos";
 import gsap from "gsap";
 
 const btn = ref(null);

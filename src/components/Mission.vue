@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div
     class="d-flex flex-column container mt-5 justify-content-center align-items-center bg-primary-info"
@@ -11,7 +12,7 @@
           line-height: 30px;
           font-size: 15px;
           font-size: 14px;
-          text-align: center;
+          text-align: justify;
           overflow: hidden;
         "
       >
