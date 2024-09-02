@@ -99,7 +99,7 @@ onMounted(() => {
 }
 @media (max-width: 576px) {
   .special {
-    font-size: 35px;
+    font-size: 40px;
   }
   .header {
     height: 650px;
