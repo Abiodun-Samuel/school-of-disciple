@@ -43,8 +43,8 @@
                     </div>
                     
                     <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
+                        <input type="text" class="form rounded-left  px-2 text-white transparent-input" placeholder="Type your Message here" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
                     </div>
                 </div>
             </div>
@@ -81,9 +81,14 @@ export default {
 </script>
 
 <style>
-input{
-    background: none;
-}
+input {
+    background-color: transparent; /* Makes the input background transparent */
+    border: 1px solid #ccc; /* Adjusts the border */
+    color: #000; /* Text color */
+  }
+  input:focus{
+    outline: none;
+  }
 .footer{
     background:#121921;
     padding:30px 0px;
