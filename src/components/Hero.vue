@@ -12,10 +12,8 @@
       >
       <div class="w-100 d-flex justify-content-center flex-column align-items-center">
         <h1 class="special text-white overflow-hidden mt-5">Welcome to School of Disciples</h1>
-          <h5 class="text-white text-center w-75 lh-lg">
-            Our mission is to nurture and develop future leaders
-            who are grounded in biblical truth, filled with the Holy Spirit,
-            and committed to serving their communities with excellence and compassion,
+          <h5 class="text-white col-12 col-md-8 lh-lg">
+            Empowering future leaders with biblical truth, Holy Spirit guidance, and compassionate service
           </h5>
         </div>
         <h5 class="text-white text-center">
