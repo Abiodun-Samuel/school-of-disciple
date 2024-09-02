@@ -2,7 +2,7 @@
 <template>
     <footer>
         <div class="footer ">
-            <div class="container gap-5 d-flex flex-column flex-md-row justify-content-between  ">
+            <div class="container mt-5 gap-5 d-flex flex-column flex-md-row justify-content-between  ">
                 <div class="col-md-5 text-white-50">
                     <h3>About US</h3>
                     <p class="">The School of Disciples which started in 1985 is co-ordinated by the Christ the
