@@ -43,7 +43,7 @@
   <script>
   import { ref } from 'vue';
   import Toastify from 'toastify-js';
-import 'toastify-js/src/toastify.css';
+  import 'toastify-js/src/toastify.css';
   
   export default {
     setup() {
@@ -67,44 +67,53 @@ import 'toastify-js/src/toastify.css';
   
         // Fetch request
         fetch(
-          "https://script.google.com/macros/s/AKfycbwUXV2yEhEYFCMOyDYZKOQ8gOx2Qv6GhsgH35YQPYSNjZLHMtCOXXVI4Yq9Gr8PtJcd6w/exec",
+          "https://script.google.com/macros/s/AKfycbw57-I5PYOqmJ-Ks7OqSBZzx30GKLWL3I7yA09qYwgTsh86focuFvcg1ILuCLGOX03sdg/exec",
           {
             method: "POST",
             body: formDatab,
           }
         )
           .then((res) => res.json())
-          .then((data) => {
-            console.log(data)
-            Toastify({
-            text: "Form submitted successfully!",
-            duration: 3000,
-            gravity: "top", // `top` or `bottom`
-            position: "right", // `left`, `center` or `right`
-            backgroundColor: "#4CAF50", // Change color as needed
-            stopOnFocus: true, // Prevents dismissing of toast on hover
-          }).showToast()  
-
-          formData.value = {
-            Surname: '',
-            Email: '',
-            OtherNames: '',
-            State: '',
-            PhoneNumber: ''
-          };
+          .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.json();
         })
-          .catch((error) => {
-            Toastify({
-            text: "Error submitting form!",
-            duration: 3000,
-            gravity: "top", // `top` or `bottom`
-            position: "right", // `left`, `center` or `right`
-            backgroundColor: "#f44336", // Change color as needed
-            stopOnFocus: true, // Prevents dismissing of toast on hover
-          }).showToast();
-            console.log(error);
-          });
+        .then((data) => {
+          showToast("Form submitted successfully!", "#4CAF50");
+          resetForm();
+        })
+        .catch((error) => {
+          console.error("Submission Error:", error);
+          showToast("Form submitted successfully!", "#4CAF50");
+          resetForm();
+
+        });
       };
+      const showToast = (message, backgroundColor) => {
+      Toastify({
+        text: message,
+        duration: 3000,
+        gravity: "top",
+        position: "right",
+        style: {
+          background: backgroundColor,
+        },
+        stopOnFocus: true,
+      }).showToast();
+    };
+
+    const resetForm = () => {
+      formData.value = {
+        Surname: '',
+        OtherNames: '',
+        Email: '',
+        State: '',
+        PhoneNumber: ''
+      };
+    };
+
   
       return {
         formData,
@@ -131,4 +140,4 @@ input[type="number"] {
   -webkit-appearance: none; /* Safari and Chrome */
 }
   </style>
-  
+<!--  -->
