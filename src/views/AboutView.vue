@@ -6,7 +6,7 @@ import Team from '@/components/Team.vue';
 <template>
   <div style="background-color:#f8f8f8">
   <div class="header">
-    <h1 class="special text-white overflow-hidden mt-5">Our Team</h1>
+    <h1 class="special text-white overflow-hidden mt-5">About U</h1>
   </div>
   <Team/>
 </div>
