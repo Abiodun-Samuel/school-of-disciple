@@ -7,10 +7,11 @@ import Team from '../components/Team.vue';
 import LocateUs from '../components/LocateUs.vue';
 import Footer from '../components/Footer.vue';
 import Navbar from '../components/Navbar.vue';
+import HeroSection from '@/components/HeroSection.vue';
 </script>
 <template>
-    <div class="custom-container">
-        <Hero/>
+    <div class="custom-container ">
+        <HeroSection/>
         <About />
         <LocateUs/>
         <Courses/>

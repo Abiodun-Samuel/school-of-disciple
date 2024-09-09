@@ -19,21 +19,21 @@ onMounted(() => {
   <div class="ltl d-flex flex-column mt-5 overflow-hidden" id="course">
     <div
       ref="container"   
-      data-aos="zoom-in-up"
+      data-aos=""
       class="container d-flex justify-content-around gap-5 flex-md-row flex-column align-items-center align-content-center"
     >
-      <div class="d-flex gap-1 flex-column justify-content-center align-items-center">
-        <i class="fa fa-graduation-cap" style="font-size: 40px" aria-hidden="true"></i>
+      <div class="d-flex gap-2 flex-column justify-content-center align-items-center">
+        <i class="fa fa-graduation-cap iconsaward" style="font-size: 40px;" aria-hidden="true"></i>
         <h3 class="txt" style="font-size: 1.125rem">Learning</h3>
         <p class="txte">You can learn at your own pace</p>
       </div>
-      <div class="d-flex gap-1 flex-column justify-content-center align-items-center">
-        <i class="fa fa-trophy" style="font-size: 40px" aria-hidden="true"></i>
+      <div class="d-flex gap-2 flex-column justify-content-center align-items-center">
+        <i class="fa fa-trophy iconsaward" style="font-size: 40px;" aria-hidden="true"></i>
         <h3 class="txt" style="font-size: 1.125rem">Registration</h3>
         <p class="txte">Register and Pay Online</p>
       </div>
-      <div class="d-flex gap-1 flex-column justify-content-center align-items-center">
-        <i class="fa fa-certificate" style="font-size: 40px" aria-hidden="true"></i>
+      <div class="d-flex gap-2 flex-column justify-content-center align-items-center">
+        <i class="fa fa-certificate iconsaward" style="font-size: 40px;" aria-hidden="true"></i>
         <h3 class="txt" style="font-size: 1.125rem">Certification</h3>
         <p class="txte">Earn a certificate online</p>
       </div>
@@ -43,7 +43,6 @@ onMounted(() => {
 
 <style>
 .ltl {
-  background-color: black;
   background-size: cover;
   background-position: center;
   height: 200px;
@@ -53,13 +52,13 @@ onMounted(() => {
   align-items: center;
 }
 .txt {
-  color: #ffc107;
+  color: black;
 }
+
 .txte {
   display: flex;
   text-align: center;
-
-  color: rgb(198, 189, 189);
+  color: #111;
 }
 .custom-card {
   background-color: white;
@@ -67,6 +66,17 @@ onMounted(() => {
   border-radius: 0.25rem;
   background: rgb(30, 0, 128);
   z-index: 1;
+}
+.iconsaward{
+  color:#111;
+  cursor: pointer;
+}
+.iconsaward:hover{
+  background: linear-gradient(180deg, #34dbc5, #4fda91);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 button {
   background: green;

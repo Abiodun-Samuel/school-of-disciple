@@ -1,18 +1,18 @@
 <script setup>
 import Awards from '@/components/Awards.vue'
 import Goals from '@/components/Goals.vue'
-import Hero from '@/components/Hero.vue'
-import Mission from '@/components/Mission.vue'
+import HeroSection from '@/components/HeroSection.vue'
+import Progress from '@/components/Progress.vue'
 import SubAbout from '@/components/SubAbout.vue'
 /* import SubTeamPage from '@/components/SubTeamPage.vue'
  */</script>
 
 <template>
-  <main>
-    <Hero />
+  <main class="">
+    <HeroSection />
+    <Progress/>
     <SubAbout />
     <Awards />
-    <Mission />
     <Goals />
 <!--     <SubTeamPage/>
  -->  </main>
