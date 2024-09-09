@@ -13,37 +13,6 @@ onMounted(() => {
   <div
     class="pop d-flex flex-column align-items-center gap-3 justify-content-center p-5 overflow-hidden"
   >
-    <h3>The Purpose</h3>
-    <div
-      class="row flex-md-row gap-3 h-100 overflow-hidden flex-column justify-content-center w-100 position-relative"
-    >
-      <div data-aos="fade-up" data-aos-delay="200" class="col-lg-2 col-md-6 box">
-        <div class="d-flex w-100 gap-2 h-100 justify-content-center align-items-center flex-column">
-          <i class="fa fa-diamond icons" aria-hidden="true"></i>
-          <p class="text-center">
-            To impact basic teachings on every area of Christian living and service
-          </p>
-        </div>
-      </div>
-      <div data-aos="fade-down" data-aos-delay="300" class="col-lg-2 col-md-6 box">
-        <div class="d-flex w-100 gap-2 h-100 justify-content-center align-items-center flex-column">
-          <i class="fa fa-diamond icons" aria-hidden="true"></i>
-          <p class="text-center">To train dynamic soldiers of the cross for this endtime warfare</p>
-        </div>
-      </div>
-      <div data-aos="fade-up" data-aos-delay="400" class="col-lg-2 col-md-6 box">
-        <div class="d-flex w-100 gap-2 h-100 justify-content-center align-items-center flex-column">
-          <i class="fa fa-diamond icons" aria-hidden="true"></i>
-          <p class="text-center">To produce disciples who would do the works of Jesus</p>
-        </div>
-      </div>
-      <div data-aos="fade-down" data-aos-delay="500" class="col-lg-2 col-md-6 box">
-        <div class="d-flex w-100 gap-2 h-100 justify-content-center align-items-center flex-column">
-          <i class="fa fa-diamond icons" aria-hidden="true"></i>
-          <p class="text-center">To produce disciples who would do the works of Jesus</p>
-        </div>
-      </div>
-    </div>
     <div class="d-flex justify-content-center flex-column align-items-center mt-5">
       <div class="d-flex justify-content-center align-items-center flex-column">
         <h3>School of Disciple Courses</h3>
@@ -99,8 +68,6 @@ onMounted(() => {
 
 <style>
 .pop {
-  background-color: #f5f5f5;
-  margin-top: 50px;
   overflow: auto;
 }
 .box {

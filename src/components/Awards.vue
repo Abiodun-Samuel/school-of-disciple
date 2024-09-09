@@ -68,7 +68,11 @@ onMounted(() => {
   z-index: 1;
 }
 .iconsaward{
-  color:#111;
+  background: linear-gradient(180deg, #34dbc5, #4fda91);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;  
   cursor: pointer;
 }
 .iconsaward:hover{

@@ -126,10 +126,11 @@ onMounted(() => {
   align-items: center;
   height: 50px;
   border-radius: 50%;
-  color: black;
+  color: gray;
   background: white;
-  border: 1px solid #8dd816; 
+  border: 1px solid gray; 
   margin-right: 20px;
+  margin-left: -10px;
 
 
 }
