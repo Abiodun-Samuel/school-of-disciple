@@ -1,21 +1,24 @@
 <script setup>
 import Team from '@/components/Team.vue';
+import Nav_bar from '@/components/Nav_bar.vue'
 
 </script>
 
 <template>
-  <div style="background-color:#f8f8f8">
-  <div class="header">
-    <h1 class="special text-white overflow-hidden mt-5">About Us</h1>
-  </div>
+  <div>
+    <div class="header d-flex flex-column w-100 ">
+      <div class="w-100">
+        <Nav_bar/>
+        <h1 class="special text-white text-center mt-5 overflow-hidden ">About Us</h1>
+      </div>
+    </div>
   <Team/>
 </div>
 </template>
-
 <style>
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../assets/images/hero.jpg);
+  background-image:linear-gradient(180deg, #0bccee 0%, rgba(0, 0, 0, 0.51) 0%, rgba(0, 0, 0, 0.5) 0%,
+         rgba(255, 255, 255, 0) 100%), url(../assets/images/sod4.jpeg);  
   height: 300px;
   width: 100%;
   background-repeat: no-repeat;
@@ -23,8 +26,6 @@ import Team from '@/components/Team.vue';
   opacity: 0.9;
   transition: 0.7s;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 </style>

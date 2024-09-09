@@ -26,6 +26,7 @@
     "toastify-js": "^1.12.0",
     "vue": "^3.4.38",
     "vue-owl-carousel": "^2.0.3",
+    "vue-parallaxy": "^1.1.1",
     "vue-router": "^4.3.3"
   },
   "devDependencies": {
