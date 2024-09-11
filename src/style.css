@@ -16,16 +16,6 @@
   color: white;
 }
 
-.hero{
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./assets/images/hero.jpg);
-    height: 600px;
-    width: 100%;
-    background-repeat: no-repeat;
-    overflow-y: hidden;
-    opacity: 0.9;
-    width: 100%;
-    background-size: cover;
-}
 .txt{
     text-decoration: none;
     color: white;

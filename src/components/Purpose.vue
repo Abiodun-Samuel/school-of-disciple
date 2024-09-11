@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-    <div class=" d-flex mt-5 flex-column justify-content-center align-items-center">
+    <div class="d-flex mt-5 flex-column justify-content-center align-items-center">
         <h3 class="goaltitle">The Purpose</h3>
         <p>Guiding every step towards a meaningful impact</p>
         <div class="timeline">
@@ -42,6 +42,7 @@
         position: relative;
         max-width: 1800px;
         margin:30px  auto;
+        z-index: 1;
     }
     .contain{
         padding: 10px 50px;

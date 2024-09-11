@@ -6,8 +6,7 @@ import HeroSection from '@/components/HeroSection.vue'
 import Progress from '@/components/Progress.vue'
 import Purpose from '@/components/Purpose.vue'
 import SubAbout from '@/components/SubAbout.vue'
-/* import SubTeamPage from '@/components/SubTeamPage.vue'
- */</script>
+</script>
 
 <template>
   <main class="">
@@ -18,7 +17,6 @@ import SubAbout from '@/components/SubAbout.vue'
     <Purpose/>
     <Goals />
     <GetIntouch/>
-<!--     <SubTeamPage/>
- -->  </main>
+</main>
 </template>
 <script></script>

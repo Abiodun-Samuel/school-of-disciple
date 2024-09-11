@@ -1,6 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-    <div class="d-flex flex-column justify-content-center align-items-center mt-4 gap-3">
+  <div class="position-relative ">
+    <div class=" d-flex flex-column justify-content-center align-items-center mt-4 gap-3">
       <h3 class="teamtxt">Meet The Team</h3>
       <div class="d-flex flex-md-row flex-column gap-3 container">
         <div class="card card-custom shadow p-3 mb-5 bg-white rounded">
@@ -120,7 +121,7 @@
           </div>
         </div>
   
-        <div class="card card-custom shadow p-3 mb-5 bg-white rounded">
+        <div class="card-custom shadow p-3 mb-5 bg-white rounded">
           <div class="card-body d-flex gap-3">
             <picture class="flex-shrink-0" style="flex-basis: 40%;">
               <img src="../assets/images/p3.jpg" class="img-fluid object-fit-cover h-100 w-100" alt="...">
@@ -175,6 +176,7 @@
         </div>
       </div>
     </div>
+  </div>
   </template>
   
   <style scoped>

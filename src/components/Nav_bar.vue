@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar  navbar-expand-md ">
+  <nav :class="['navbar navbar-expand-md', { sticky: isSticky }]" >
     <div class="container-md mx-md-5  my-2 mt-4">
       <div>
         <img src="../assets/images/logo.png" alt="Logo" width="120px" class="imag" />
@@ -31,7 +31,7 @@
               </router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/login" class="navlink" style="text-decoration: none">
+              <router-link to="/register" class="navlink" style="text-decoration: none">
                 Get Started
               </router-link>
             </li>
@@ -55,13 +55,31 @@
   </nav>
 </template>
 
-<script se>
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const isSticky = ref(false);
+
+const handleScroll = () => {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  isSticky.value = scrollTop > 100; // Set your height threshold here
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
 </script>
+
 
 <style scoped>
 nav {
   background-color: transparent;
   color: white;
+  position: relative;
 }
 .imag{
   margin-left: -20px;
@@ -108,7 +126,7 @@ svg{
   max-width: 1540px;
   background-color: #343a40;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 2000;
+  z-index: 99;
   transition: top 0.3s;
 }
 
@@ -155,17 +173,19 @@ svg{
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    gap: 50px;
   }
 
   .navbar-collapse {
     background-color: #343a40;
     position: absolute;
     padding: 0 20px;
-    gap: 5px;
     top: 100px;
     left: 0;
     width: 100%;
-    z-index: 1999;
+    height: 200px;
+    margin-top: 19px;
+  
   }
   .custom-toggler-icon{
     margin-left: 60px;
@@ -173,7 +193,7 @@ svg{
 }
 
 .navbar-nav {
-  text-align: center;
+  text-align: ;
 }
 
 .nav-item .nav-link:hover {
