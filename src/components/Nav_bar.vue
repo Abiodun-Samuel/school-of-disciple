@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-md ">
+  <nav class="navbar  navbar-expand-md ">
     <div class="container-md mx-md-5  my-2 mt-4">
       <div>
         <img src="../assets/images/logo.png" alt="Logo" width="120px" class="imag" />

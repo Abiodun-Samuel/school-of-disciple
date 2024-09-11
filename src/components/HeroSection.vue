@@ -3,7 +3,7 @@
         <Nav_bar/>
         <div class="d-flex flex-column flex-md-row container justify-content-between align-items-md-center mt-5 mx-md-5 mx-3">
             <div class="d-flex flex-column  gap-3">
-            <div class="d-flex  align-items-center gap-4">
+            <div  data-aos="zoom-in-up" class="d-flex  align-items-center gap-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
                   </svg>
@@ -27,18 +27,23 @@
 
         </div>
             <div class="w-25">
-                <div class="startIcon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
-                      </svg>
-                </div>
-                
+                <button type="button" class="startIcon btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                        </svg>
+                </button>
             </div>
         </div>
     </div>
+   
+     
+      
+      <!-- Modal -->
+      
 </template>
 <script  setup>
 import Nav_bar from '@/components/Nav_bar.vue'
+
 
 </script>
 <style scoped>

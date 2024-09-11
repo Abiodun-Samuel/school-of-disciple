@@ -1,6 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
     <div class="d-flex flex-column justify-content-center align-items-center mt-4 gap-3">
+      <h3 class="teamtxt">Meet The Team</h3>
       <div class="d-flex flex-md-row flex-column gap-3 container">
         <div class="card card-custom shadow p-3 mb-5 bg-white rounded">
           <div class="card-body d-flex gap-3">
@@ -177,6 +178,10 @@
   </template>
   
   <style scoped>
+  .teamtxt{
+    font-size: 32px;
+    color:#060221;
+  }
   .card-custom {
     width: 100%;
     height: 300px; /* Set a fixed height for the cards */
