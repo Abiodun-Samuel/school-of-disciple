@@ -35,24 +35,25 @@ onMounted(() => {
                 <p class="subtext">
                   It is a place where Christians from all denominations are trained to become true and genuine disciples of Jesus Christ, learning how to study and live in a way that is approved by God.
                   </p>
-                  <a href="" class="goalLink">More About us
+                  <router-link to="/about" class="goalLink">More About us
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                       <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
                     </svg>
-                    </a>
+                    </router-link>
                   </div>
             </div>
             <div class="carousel-item">
               <div>
-                <h1 class="goaltext">We are the evangelical arm of the Redeemed Christian Church of God.</h1>
+                <h1 class="goaltext">The school is for believers, ready to fulfill the command of the master</h1>
                 <p class="subtext">
-                  It is a place where Christians from all denominations are trained to become true and genuine disciples of Jesus Christ, learning how to study and live in a way that is approved by God.
+                  The whole training is more or less practical and direct lectures from the principal (Pastor E.A Adeboye) himself
+                  We will therefore recommend this school to all denominations all over the world.
                   </p>
-                  <a href="" class="goalLink">More About us
+                  <router-link to="/about" class="goalLink">More About us
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                       <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
                     </svg>
-                    </a>
+                    </router-link>
                   </div>            
                   </div>
           </div>

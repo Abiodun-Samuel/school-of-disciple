@@ -19,7 +19,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
         <div class="d-flex  justify-content-md-between navMenu   align-items-md-center " id="navbarSupportedContent">
-          <ul class="navbar-nav gap-2 me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav gap-4 gap-md-2 me-auto mb-2 mt-2  mb-lg-0">
             <li class="nav-item">
               <router-link to="/" class="navlink" style="text-decoration: none">
                 Home
@@ -173,7 +173,7 @@ svg{
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    gap: 50px;
+    gap: 10px;
   }
 
   .navbar-collapse {

@@ -5,7 +5,7 @@
             <h4 class="col-md-9 col-12 text-center text-md-start lh-base">Join this community to understand more about the School of Disciples courses, Enroll now</h4>
         </div>
         <div>
-            <button class="startbtn">Get Started</button>
+            <router-link to="/register" class="startbtn">Get Started</router-link>
         </div>
     </div>
 </template>
@@ -22,6 +22,9 @@
     background: linear-gradient(to right, rgb(15, 197, 239) 0%, rgb(141, 216, 22) 100%);
     width: 200px;
     font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
 }
 .startbtn:hover{
     background: linear-gradient(to right,rgb(141, 216, 22)  0%,  rgb(15, 197, 239) 100%);
