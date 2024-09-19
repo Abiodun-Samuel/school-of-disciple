@@ -186,7 +186,9 @@
               <p class="head">Pastor Michael Oluwafemi</p>
               <p class="subhead">National Coordinator</p>
               <p class="details text-justify d-flex">
-                              
+                Pastor Oluwafemi is one of the Special Assistant to the Continental
+                 Overseer (SATCO) and the pastor in charge of Province 3, Region 6. 
+                 He is the national coordinator of School of Disciples RCCG Americas 1.       
               </p>
             </div>
           </div>
