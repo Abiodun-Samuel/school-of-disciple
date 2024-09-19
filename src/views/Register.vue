@@ -16,11 +16,11 @@
         <form @submit.prevent="handleSubmit" class="form mx-4 my-3">
             <div class="mb-3">
                 <label for="surname" class="form-label">Surname</label>
-                <input v-model="formData.Surname" placeholder="Your Name" name="Surname" class="form-control" type="text" />
+                <input v-model="formData.Surname" placeholder="Your Name" name="Surname" class="form-control" type="text" required />
             </div>
             <div class="mb-3">
                 <label for="otherNames" class="form-label">Other Names</label>
-                <input v-model="formData.OtherNames" placeholder="Your Other Names" class="form-control" name="OtherNames" type="text" />
+                <input v-model="formData.OtherNames" placeholder="Your Other Names" class="form-control" name="OtherNames" type="text" required />
 
             </div>
             <div class="mb-3">
@@ -30,7 +30,7 @@
             </div>
             <div class="mb-3">
                 <label for="phoneNumber" class="form-label">Phone Number</label>
-                <input v-model="formData.PhoneNumber" placeholder="Your Phone Number" class="form-control no-spinner" name="PhoneNumber" type="number" />
+                <input v-model="formData.PhoneNumber" placeholder="Your Phone Number" class="form-control no-spinner" name="PhoneNumber" type="number" required />
             </div>
             <div class="mb-3">
                 <label for="state" class="form-label">State</label>
