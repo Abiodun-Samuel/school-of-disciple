@@ -192,10 +192,6 @@ svg{
   }
 }
 
-.navbar-nav {
-  text-align: ;
-}
-
 .nav-item .nav-link:hover {
   color: #000;
 }

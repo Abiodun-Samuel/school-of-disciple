@@ -184,7 +184,7 @@
             </picture>
             <div class="flex-grow-1" style="flex-basis: 60%; scrollbar-width: none; scroll-behavior: smooth;">
               <p class="head">Pastor Michael Oluwafemi</p>
-              <p class="subhead"> [National Coordinator]</p>
+              <p class="subhead">National Coordinator</p>
               <p class="details text-justify d-flex">
                               
               </p>
