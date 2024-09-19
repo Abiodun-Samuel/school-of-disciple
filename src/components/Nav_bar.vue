@@ -128,6 +128,7 @@ svg{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 99;
   transition: top 0.3s;
+  height: 80px;
 }
 
 /* Custom hamburger icon styles */
