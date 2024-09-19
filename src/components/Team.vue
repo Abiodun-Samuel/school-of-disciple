@@ -36,6 +36,7 @@
           </div>
         </div>
       </div>
+      
   
       <div class="d-flex flex-md-row flex-column gap-3 container">
         <div class="card card-custom shadow p-3 mb-5 bg-white rounded">
@@ -144,11 +145,11 @@
               <img src="../assets/images/p4.jpg" class="img-fluid object-fit-cover h-100 w-100" alt="...">
             </picture>
             <div class="flex-grow-1" style="flex-basis: 60%; scrollbar-width: none; scroll-behavior: smooth;">
-                <p class="head">Pastor Segun Emmanuel</p>
-                <p class="subhead">Director of Events and Programs</p>
-                <p class="details">Pastor Mike Daniel joined the Redeemed Christian Church of God in 1989.
+                <p class="head">Pastor Segun Emmanuel </p>
+                <p class="subhead">Asst. Director of Events and Programs</p>
+                <p class="details"><!-- Pastor Mike Daniel joined the Redeemed Christian Church of God in 1989.
                      He completed the School of Disciples and graduated in 1999. In 2003, he started the School
-                      of Disciples in Dallas, TX, USA. Presently, he serves as the Director of Programs at SOD.
+                      of Disciples in Dallas, TX, USA. Presently, he serves as the Director of Programs at SOD. -->
                   </p>
               </div>
           </div>
@@ -175,6 +176,40 @@
           </div>
         </div>
       </div>
+      <div class="d-flex flex-md-row flex-col  gap-3 container ">
+        <div class="card card-custom1 shadow p-3 mb-5 bg-white rounded">
+          <div class="card-body d-flex gap-3">
+            <picture class="flex-shrink-0" style="flex-basis: 40%;">
+              <img src="../assets/images/p2.jpeg" class="img-fluid object-fit-cover h-100 w-100" alt="...">
+            </picture>
+            <div class="flex-grow-1" style="flex-basis: 60%; scrollbar-width: none; scroll-behavior: smooth;">
+              <p class="head">Pastor Michael Oluwafemi</p>
+              <p class="subhead"> [National Coordinator]</p>
+              <p class="details text-justify d-flex">
+                              
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <!--
+        <div class=" p-3 mb-5 rounded">
+           <div class="card-body d-flex gap-3">
+            <picture class="flex-shrink-0" style="flex-basis: 40%;">
+              <img src="../assets/images/Pastor2.jpg" class="img-fluid object-fit-cover h-100 w-100" alt="...">
+            </picture>
+            <div class="flex-grow-1" style="flex-basis: 60%; scrollbar-width: none; scroll-behavior: smooth;">
+              <p class="head">Pastor (Mrs) Folu Adeboye</p>
+              <p class="subhead">Vice President (Education)</p>
+              <p class="details">
+                Pastor (Mrs) Folu Adeboye is the wife of the General Overseer and has a heart of pursuing the good of ordinary people. She is a veteran teacher and started her teaching career as a spinster and in the course of her life acquired various teaching skills.
+
+                Her seasoned experience as a teacher qualified her to be appointed as the Headmistress of Christ the Redeemers’ Nursery and Primary School, Ebute-Metta, Lagos.              </p>
+            </div>
+          </div>
+        </div>
+        -->
+      </div>
     </div>
   </div>
   </template>
@@ -187,6 +222,11 @@
   .card-custom {
     width: 100%;
     height: 300px; /* Set a fixed height for the cards */
+  }
+  .card-custom1{
+    width: 49%;
+    height: 300px; /* Set a fixed height for the cards */
+
   }
   .details{
     font-size: 13px;
@@ -213,6 +253,11 @@
   
   .flex-grow-1 {
     overflow-y: auto; /* Prevent overflow from the text area */
+  }
+  @media screen and (max-width: 770px) {
+    .card-custom1{
+      width: 100%;
+    }    
   }
   </style>
   
